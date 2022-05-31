@@ -1,0 +1,39 @@
+.NavigationBar {
+  width: 100vw;
+  position: fixed;
+  transition: top 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  top: 0;
+  z-index: 999;
+  place-items: center;
+  display: grid;
+}
+.NavigationBarC {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+.nvg {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.NavigationBar-Items {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  .NavigationBar-Item {
+    margin: 0 10px;
+    font-weight: bold;
+    cursor: pointer;
+    > * {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var(--color-main);
+      }
+    }
+  }
+}

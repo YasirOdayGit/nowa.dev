@@ -1,0 +1,18 @@
+.ButtonTD-Span {
+  border-radius: var(--tk-br);
+  display: inline-block;
+  .ButtonTD {
+    padding: 10px 20px;
+    border-radius: var(--tk-br);
+    border: none;
+    position: relative;
+    top: -5px;
+    transition: top 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color-textPrimary);
+    &:hover {
+      top: -2px;
+    }
+  }
+}
